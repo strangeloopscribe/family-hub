@@ -1,0 +1,11 @@
+# Netlify build settings for Family Hub.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback — every route serves index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
